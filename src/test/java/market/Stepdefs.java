@@ -108,8 +108,8 @@ public class Stepdefs {
     }
 
     @Когда("Выбрать сортировку {string}")
-    public void выбрать_сортировку(String param) throws InterruptedException {
-        driver.findElementByLinkText(param).click();
+    public void выбрать_сортировку(String sectionName) throws InterruptedException {
+        driver.findElementByLinkText(sectionName).click();
     }
 
     @Тогда("Проверить, что элементы на странице отсортированы верно")
